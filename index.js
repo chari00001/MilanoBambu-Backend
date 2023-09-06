@@ -7,11 +7,11 @@ const cors = require("cors");
 const multer = require("multer");
 const path = require("path");
 
-const productRoutes = require("./routes/products");
-const userRoutes = require("./routes/users");
-const uploadRoutes = require("./routes/upload");
+const productRoutes = require("./src/routes/products");
+const userRoutes = require("./src/routes/users");
+const uploadRoutes = require("./src/routes/upload");
 
-const connectDB = require("./config/database");
+const connectDB = require("./src/config/database");
 connectDB();
 
 const dev = process.env.NODE_ENV !== "production";
