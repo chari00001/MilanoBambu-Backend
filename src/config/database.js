@@ -1,6 +1,6 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 
-let MONGO_URI = 'mongodb+srv://chari:Afro4246@bambumobilya.jkrdfnp.mongodb.net/bambu-mobilya?retryWrites=true&w=majority'
+// let MONGO_URI = 'mongodb+srv://chari:Afro4246@bambumobilya.jkrdfnp.mongodb.net/bambu-mobilya?retryWrites=true&w=majority'
 
 const connectDB = async () => {
   try {
@@ -8,9 +8,9 @@ const connectDB = async () => {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
-    console.log('Veritabanına bağlandı!');
+    console.log("Veritabanına bağlandı!");
   } catch (error) {
-    console.error('Veritabanına bağlanırken bir hata oluştu:', error.message);
+    console.error("Veritabanına bağlanırken bir hata oluştu:", error.message);
     process.exit(1);
   }
 };
