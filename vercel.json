@@ -1,0 +1,5 @@
+{
+    "name": "my-express-app",
+    "framework": "nodejs",
+    "main": "index.js"
+  }
