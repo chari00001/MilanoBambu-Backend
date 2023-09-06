@@ -1,10 +1,11 @@
 const mongoose = require("mongoose");
 
-// let MONGO_URI = 'mongodb+srv://chari:Afro4246@bambumobilya.jkrdfnp.mongodb.net/bambu-mobilya?retryWrites=true&w=majority'
+let MONGO_URI =
+  "mongodb+srv://chari:Afro4246@bambumobilya.jkrdfnp.mongodb.net/bambu-mobilya?retryWrites=true&w=majority";
 
 const connectDB = async () => {
   try {
-    await mongoose.connect(MONGO_URI || process.env.MONGO_URI, {
+    await mongoose.connect(process.env.MONGO_URI || MONGO_URI, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
